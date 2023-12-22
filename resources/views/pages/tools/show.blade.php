@@ -1,0 +1,120 @@
+<x-default-layout>
+
+    @section('title')
+    AI Tools
+    @endsection
+
+    @section('breadcrumbs')
+    {{ Breadcrumbs::render('tools-view') }}
+    @endsection
+
+    <!--begin::Layout-->
+    <div class="d-flex flex-column flex-lg-row">
+        <!--begin::Sidebar-->
+        <div class="flex-column flex-lg-row-auto w-lg-250px w-xl-350px mb-10">
+            <!--begin::Card-->
+            <div class="card mb-5 mb-xl-8">
+                <!--begin::Card body-->
+                <div class="card-body">
+                    <!--begin::Summary-->
+                    <!--begin::User Info-->
+                    <div class="d-flex flex-center flex-column py-5">
+                        <!--begin::Avatar-->
+                        <div class="symbol symbol-100px symbol-circle mb-7">
+                            <img src="{{ asset('images/tool/'.$tool->thumbnail) }}" alt="image" />
+                            
+                        </div>
+                        <!--end::Avatar-->
+                        <!--begin::Name-->
+                        <a href="#" class="fs-3 text-gray-800 text-hover-primary fw-bold mb-3">{{ $tool->title ?? '' }}</a>
+                        <!--end::Name-->
+                        <!--begin::Position-->
+                       
+
+                    </div>
+                
+                </div>
+                <!--end::Card body-->
+            </div>
+
+        </div>
+        <!--end::Sidebar-->
+        <!--begin::Content-->
+        <div class="flex-lg-row-fluid ms-lg-15">
+            <!--begin:::Tabs-->
+
+            <!--end:::Tabs-->
+            <!--begin:::Tab content-->
+            <div class="tab-content">
+                <!--begin:::Tab pane-->
+                <div class="tab-pane fade show active" id="kt_user_view_overview_tab" role="tabpanel">
+                    <!--begin::Card-->
+                    <div class="card card-flush mb-6 mb-xl-9">
+                        <!--begin::Card header-->
+                        <div class="card-header mt-6">
+                            <!--begin::Card title-->
+                            <div class="card-title flex-column">
+                                <h2 class="mb-1">Tool Details</h2>
+                            </div>
+                            <!--end::Card title-->
+                            <!--begin::Card toolbar-->
+                          
+                        </div>
+                        <div class="card-body p-9 pt-4">
+                            <div class="separator"></div>
+                            <!--begin::Details content-->
+                            <div id="kt_user_view_details" class="collapse show">
+                                <div class="pb-5 fs-6">
+                                    <!--begin::Details item-->
+                                    <div class="row">
+                                        <div class="col-md-3"><div class="fw-bold mt-5">Price</div></div>
+                                        <div class="col-md-9"><div class="text-gray-600 mt-5">{{ $tool->price ?? '' }}</div></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-3"><div class="fw-bold mt-5">Category</div></div>
+                                        <div class="col-md-9"><div class="text-gray-600 mt-5">{{ $tool->category ?? '' }}</div></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-3"><div class="fw-bold mt-5">Website Link</div></div>
+                                        <div class="col-md-9"><div class="text-gray-600 mt-5">{{ $tool->website_link ?? '' }}</div></div>
+                                    </div>
+                                    <div class="row mt-5 mb-5">
+                                        <div class="col-md-3"> <div class="fw-bold mt-5">Tags</div></div>
+                                        <div class="col-md-9"><div class="text-gray-600 mt-5">{{ $tool->tags ?? '' }}</div></div>
+                                    </div>
+
+                                    <div class="row mt-5 mb-5">
+                                        <div class="col-md-3"> <div class="fw-bold mt-5">Use Case</div></div>
+                                        <div class="col-md-9"><div class="text-gray-600 mt-5">{{ $tool->use_case1 ?? '' }}</div></div>
+                                    </div>
+                                    @if(!empty($tool->use_case2))
+                                    <div class="row mt-5 mb-5">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-9"><div class="text-gray-600 mt-5">{{ $tool->use_case2 ?? '' }}</div></div>
+                                    </div>
+                                    @endif
+                                    @if(!empty($tool->use_case2))
+                                    <div class="row mt-5 mb-5">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-9"><div class="text-gray-600 mt-5">{{ $tool->use_case2 ?? '' }}</div></div>
+                                    </div>
+                                    @endif
+                                    <div class="row mt-5 mb-5">
+                                        <div class="col-md-3"> <div class="fw-bold mt-5">Description</div></div>
+                                        <div class="col-md-9"><div class="text-gray-600 mt-5">{{ $tool->description ?? '' }}</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--end:::Tab content-->
+        </div>
+
+    </div>
+  
+</x-default-layout>
