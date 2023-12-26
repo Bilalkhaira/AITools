@@ -1,0 +1,847 @@
+body {
+	background: #27313A;
+}
+
+
+.rk-container .col {
+	/*background-color: green;*/
+}
+
+
+/*=Header*/
+.rk-container {
+	background-color: #27313A;
+	/*height: 64px;*/
+	/*position: relative;*/
+
+}
+
+.rk_header .rk-container .rk-header-row .col {
+	/*position: absolute;*/
+	/*bottom: 0px;*/
+	margin-top: 6%;
+}
+
+.rk_header .rk-container .rk-header-row span {
+	color: #fff;
+	font-weight: bold;
+	margin-left: 4%;
+}
+
+.rk_submit_tool {
+	float: left;
+}
+
+.rk_submit_tool a {
+	background: #56ABF4;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+
+.rk_dropdown .btn-group {
+	float: right;
+	border-radius: 20px;
+	width: 33%;
+
+}
+
+.rk_dropdown .btn-group .dropdown-toggle {
+	border-radius: 20px;
+	border: 2px solid #4D94D1;
+	background: #27313A;
+}
+
+.rk_dropdown .btn-group .dropdown-toggle .fa-sm,
+.rk_dropdown .btn-group .dropdown-toggle .fa-bars {
+	font-size: 1.55em;
+	margin-right: 10%;
+}
+
+.rk_dropdown .btn-group .dropdown-toggle::after {
+	display: none;
+}
+
+.rk_dropdown ul {
+	background: #3E566A;
+	--bs-dropdown-padding-y: 0rem;
+
+}
+
+.rk_dropdown ul li {
+	background: #384148;
+	height: 45px;
+	padding: 3px;
+	/*text-align: center;*/
+}
+
+.rk_dropdown ul li button {
+	color: #fff;
+	height: 45px;
+
+}
+
+.colorRed {
+	color: red;
+}
+
+.rk_dropdown ul li button b {
+	margin-left: 20px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.rk_dropdown ul li button:hover {
+	background-color: #3E566A;
+}
+
+.rk_dropdown ul li a {
+	color: #fff;
+	height: 45px;
+
+}
+
+.rk_dropdown ul li a b {
+	margin-left: 20px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.rk_dropdown ul li a:hover {
+	background-color: #3E566A;
+}
+
+/*Header Banner Section*/
+.rk_header_banner {
+
+	border-bottom: 1px solid #888E93;
+}
+
+.rk_header_banner .rk-container .rk-header-row h2,
+.rk_header_banner .rk-container .rk-header-row p {
+	color: #fff;
+}
+
+.rk-header-row {
+	height: 200px;
+	/*margin-top: 6%;*/
+	/*background-color: green;*/
+	/*position: absolute;*/
+}
+
+.rk-header-row h2 {
+	text-align: center;
+}
+
+.rk-header-row p {
+	text-align: center;
+	color: #E4E6E6;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.rk_banner_category .input-group .form-outline {
+	width: 80%;
+}
+
+.rk_banner_category .input-group .form-outline input {
+	height: 77px;
+	border-radius: 33px;
+	background-color: #27313A;
+	border: 1px solid #888E93;
+
+}
+
+.rk_banner_category .input-group .rk-btn {
+	position: relative;
+	margin-left: -136px !important;
+	width: 134px;
+	border-radius: 33px !important;
+	background-color: #56ABF4;
+	height: 71px;
+	top: 3px;
+
+}
+
+#home .col-md-4 {
+	margin-bottom: 30px;
+}
+
+.rk_form_list {
+	color: white;
+}
+#imgDelete{
+	position: absolute;
+	top: 13%;
+	right: 6%;
+	background-color: white;
+	padding: 1px 5px;
+	border-radius: 5px;
+}
+
+#tool_editBtn {
+	color: #56ABF4;
+}
+.editToolImage .col-md-3{
+	position: relative;
+}
+.tool_editBtn_main {
+	position: relative;
+}
+
+.editToolImage img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#tool_editBtn {
+	position: absolute;
+	top: 1%;
+	right: 3%;
+	background-color: white;
+	padding: 4px 20px;
+	border-radius: 10px;
+}
+
+#tool_editBtn a {
+	margin-right: 5px;
+}
+
+#profileImg {
+	width: 10%;
+	margin-bottom: 30px;
+	border-radius: 100px;
+}
+
+.text-right {
+	text-align: right;
+}
+
+h3 {
+	color: white !important;
+}
+
+.rk_banner_category .input-group {
+	margin-left: 100px;
+}
+
+.rk_banner_category .input-group .rk-btn .fa-search {
+	font-size: 35px;
+}
+
+.rk_banner_category .input-group .form-outline ::placeholder {
+	color: #888E93;
+
+}
+
+.active {
+	background: #56ABF4 !important;
+}
+
+.rk_heart_img_icon {
+	cursor: pointer;
+}
+
+.rk_cat_slider {
+	margin-top: 4%;
+	/*background-color: red;*/
+	margin-bottom: 4%;
+}
+
+.textRight ul {
+	float: right;
+}
+
+.rk_cat_slider {
+	width: 100%;
+	/* margin-left: 16%; */
+	padding-left: 115px;
+	padding-right: 150px;
+
+}
+
+.rk_cat_slider a {
+	background-color: #384148;
+	color: #fff;
+	margin-top: 10px;
+	padding: 10px 15px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+/* home page body content*/
+
+.rk_body_content {
+	margin-top: 5%;
+}
+
+.col-sm-3 {
+	/*background-color: green;*/
+}
+
+.rk_post_title {
+	padding: 23px;
+}
+
+.rk_post_title h4 {
+	float: left;
+	/*margin-top: 10%;*/
+	color: #fff;
+}
+
+.rk_filter_category {
+	background: #384148;
+	border-radius: 10px;
+	height: 437px;
+
+}
+
+.rk_head_post_img {
+	background: #384148;
+	border-radius: 10px;
+	height: 437px;
+}
+
+.rk_head_post_img img {
+	width: 100%;
+}
+
+.rk_post_title button {
+	float: right;
+	/*margin-top: 10%;*/
+	background: #56ABF4;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+}
+
+.rk_post {
+	margin-top: 4%;
+}
+
+.rk_post p {
+	color: #CDCFD1;
+	padding: 23px;
+}
+
+.rk_post_bottom {
+	padding: 23px;
+	margin-top: -17%;
+
+}
+
+.rk_post_bottom img {
+	width: 54%;
+	color: #fff;
+	border-radius: 10px;
+	background: #27313A;
+	height: 20px;
+}
+
+.rk_post_bottom .fa-code {
+	/*border-radius: 10px;
+    width: 15%;
+    text-align: center;
+    height: 23px;
+    background: #27313A;
+*/
+
+}
+
+.rk_post_bottom .rk_bottom {
+	width: 31px;
+	height: 30px;
+	background: #27313A;
+	float: right;
+	margin-right: 8px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.rk_post_bottom button {
+	background: #3E566A;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-size: 9px;
+}
+
+.rk_col_3 .col-3 {
+	margin-bottom: 4%;
+}
+
+
+/*=Category filter*/
+
+.rk_filter_category {
+	/*margin-top: 5%;*/
+	padding: 10px;
+	color: #fff;
+}
+
+.rk_filter_category .form-select {
+	background-color: #3E566A;
+	color: #CFD5DA;
+	border: 1px solid #888D91;
+	height: 46px;
+	font-size: 14px;
+}
+
+.mb-3 button {
+	background: #56ABF4;
+	width: 100%;
+	margin-bottom: 10%;
+	color: #F5FAFE;
+	text-align: left;
+	height: 48px;
+}
+
+.rk_explore {
+	background: #56ABF4;
+	width: 100%;
+	color: #F5FAFE;
+	text-align: center;
+	height: 48px;
+	margin-top: 15%;
+
+}
+
+.rk-subscriber-container {
+	height: 250px;
+	color: #fff;
+	background-color: #30495F;
+	border-radius: 20px;
+}
+
+.rk-subscriber-container h3 {
+	margin-top: 2%;
+	text-align: center;
+	font-size: 35px;
+	width: 56%;
+	margin-left: 28%;
+}
+
+.rk_subscriber_content .container .row {
+	border-radius: 20px;
+	border: 1px solid #888E93;
+}
+
+.rk_banner_category_bottom .input-group .form-outline {
+	width: 80%;
+}
+
+.rk_banner_category_bottom .input-group .form-outline input {
+	height: 48px;
+	border-radius: 10px;
+	background-color: #385D7D;
+	border: 1px solid #888E93;
+
+}
+
+.rk_banner_category_bottom .input-group .rk-btn {
+	position: relative;
+	margin-left: -138px !important;
+	width: 134px;
+	border-radius: 11px !important;
+	background-color: #56ABF4;
+	height: 41px;
+	top: 3px;
+
+}
+
+.rk_banner_category_bottom .input-group {
+	margin-left: 100px;
+}
+
+.rk_banner_category_bottom .input-group .rk-btn .f_rk {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.rk_banner_category_bottom .input-group .form-outline ::placeholder {
+	color: #fff;
+
+}
+
+.rk-footer-row .col-3 {
+	/*background-color: red;*/
+	padding-left: 0px;
+	margin-top: 3%;
+
+}
+
+.rk_bottom_logo span {
+	margin-left: -3px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.rk_bottom_logo p {
+	color: #fff;
+	margin-top: 5%;
+}
+
+.rk_bottom_logo img {
+	/*margin-left: 3%;*/
+}
+
+
+/*=Footer*/
+
+
+.rk_footer {
+	background: #384148;
+	height: 219px;
+	margin-top: 7%;
+	border-top: 1px solid #888E93;
+}
+
+.rk-footer-container .rk-footer-row {
+	/*margin-top: 7%;*/
+
+}
+
+#rknavbarNavAltMarkup {
+	margin-left: 8%;
+}
+
+.rk-navbar {
+	background-color: #384148 !important;
+	margin-top: 7%;
+}
+
+#rknavbarNavAltMarkup .navbar-nav a {
+
+	font-weight: bold;
+}
+
+.rk_link_icon_footer {
+	margin-top: 11%;
+}
+
+.rk_link_icon_footer ul li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+
+}
+
+.rk_link_icon_footer ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #56ABF4;
+}
+
+.rk_social_icon_footer ul li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+}
+
+.rk_social_icon_footer ul li a {
+	text-decoration: none;
+
+}
+
+.rk_social_icon_footer ul li a .fa-brands {
+	font-size: 30px;
+}
+
+.rk_social_icon_footer {
+	margin-top: 22%;
+}
+
+.rk_footer_copyright {
+	height: 100px;
+	border-top: 1px solid #888E93;
+	background-color: #384148;
+}
+
+.rk-footer-row-copyright {
+	text-align: center;
+	color: #797E83;
+}
+
+.rk_cp_margin {
+	margin-top: 5%;
+}
+
+.rk_banner_category_bottom {
+	margin-top: 3%;
+}
+
+.rk_submit_tool_new {
+	float: right;
+}
+
+.rk_submit_tool_new button {
+	background: #56ABF4;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+
+.rk_profile_button button .fa-solid {
+	font-size: 21px;
+	margin-right: 9px;
+
+}
+
+.rk_profile_button ul {
+	margin-top: 50px;
+}
+
+.rk_profile_button button {
+	/* width: 100%; */
+	/* height: 48px; */
+	border-radius: 12px;
+	background: #384148;
+	color: #fff;
+	/* margin-left: 18%; */
+	font-weight: bold;
+	padding: 15px 30px;
+	margin-left: 45px;
+
+}
+
+.rk_profile_button button:hover {
+	background-color: #56ABF4;
+	color: #fff;
+}
+
+.rk_welcome_img img {
+	float: left;
+}
+
+.rk_welcome_img h3 {
+	color: #fff;
+	font-weight: bold;
+	width: 30%;
+	/*background: red;*/
+	margin-top: 3%;
+	margin-left: 11%;
+}
+
+.rk_welcome_img {
+	margin-top: 4%;
+}
+
+.rk_welcome_toll {
+	margin-top: 10%;
+}
+
+.rk_welcome_toll h3 {
+	color: #fff;
+	float: left;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.rk_welcome_toll button {
+	float: right;
+	background: #27313A;
+	color: #56ABF4;
+	/* font-weight: bold; */
+	border: 1px solid #56ABF4;
+	font-size: 14px;
+}
+
+/*Form list submit new tools*/
+.rk_form_list {
+	padding: 28px;
+	background-color: #384148;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 6%;
+	border-radius: 5px;
+}
+
+.rk_form_list form h3 {
+	text-align: center;
+	color: #56ABF4;
+	margin-top: 4%;
+}
+
+.rk_form_list form .mb-3 input {
+	height: 65px;
+	color: #fff;
+	border: 1px solid #888D91;
+
+}
+
+.rk_form_list form .mb-3 select {
+	color: #888D91;
+}
+
+.rk_form_list form .mb-3 select,
+.rk_form_list form .mb-3 textarea {
+	border: 1px solid #888D91;
+}
+
+.rk_form_list form .mb-3 textarea {
+	color: #fff;
+
+}
+
+.rk_form_list form .mb-3 input,
+.rk_form_list form .mb-3 select,
+.rk_form_list form .mb-3 textarea {
+	background-color: #27313A;
+}
+
+.rk_form_list form .mb-3 label {
+	color: #888D91;
+	font-weight: bold;
+}
+
+.rk_form_list form .mb-3 span {
+	color: #888D91;
+	font-size: 13px;
+}
+
+
+.rk_form_list form .mb-3 ::placeholder {
+	color: #888D91;
+	font-size: 15px;
+	padding: 24px;
+}
+
+.rk_form_list form .mb-3 textarea::placeholder {
+	margin-top: -3%;
+
+}
+
+#rkformFileMultiple input[type=file]::file-selector-button {
+	background-color: #56ABF4;
+	height: 50px;
+	border-radius: 3px;
+	padding: 10px;
+	/*position: absolute;*/
+	margin-left: 0.5%;
+	margin-top: 1%;
+
+}
+
+#rkformFileMultiple {
+	/*height: 10px;*/
+	width: 40%;
+}
+
+/*=Register form*/
+#rkFromListsubmitNew {
+	margin-top: 40px;
+
+}
+
+.optionsPrice {
+	height: 20px !important;
+	width: 20px !important;
+}
+
+#rkFromListsubmitNew input {
+	background-color: #384148;
+	border: 2px solid #56ABF4;
+	color: #56ABF4;
+	font-weight: bold;
+}
+
+#rkEmptyButtonLink input {
+	background-color: #384148;
+	border: none;
+}
+
+#siginupBtn {
+	text-align: center;
+}
+
+#siginupBtn a {
+	color: white;
+	text-decoration: none;
+}
+
+#rkFacebookLink input {
+	background-color: #1877F2;
+	border: none;
+}
+
+#rkGoogleLink input {
+	background-color: #FFFFFF;
+	color: #4D4D4D;
+	border: none;
+
+}
+
+#rkFacebookLink img {
+	margin-top: 17px;
+	position: absolute;
+	margin-left: 2%;
+	font-size: 30px;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+}
+
+#rkGoogleLink img {
+	margin-top: 17px;
+	position: absolute;
+	margin-left: 2%;
+	font-size: 30px;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+}
+
+#rkGoogleLink {
+	margin-bottom: 8% !important;
+}
+
+#rkLoginSubmit input {
+	background-color: #56ABF4;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	margin-top: 40px;
+}
+
+.lost_password {
+	color: #5097D3;
+}
+
+.lost_password a {
+	text-decoration: none;
+	color: #5097D3;
+
+}
+
+.colorWhite {
+	color: white;
+}
+
+#rkProfileLoginSubmit input {
+	background-color: #384148;
+	border: 2px solid #56ABF4;
+	color: #56ABF4;
+
+}
+
+#rkProfileBio textarea {}
+
+#rkformFileMultipl {
+	width: 40%;
+}
+
+#rkformFileMultipl input[type=file] {
+	height: 38px;
+}
+
+#rkformFileMultipl input[type=file]::file-selector-button {
+	background-color: #56ABF4;
+	/*height: 10px;*/
+	border-radius: 3px;
+	padding: 5px;
+	margin-left: 0.5%;
+	/*margin-top: 1%;*/
+	color: #fff;
+
+}

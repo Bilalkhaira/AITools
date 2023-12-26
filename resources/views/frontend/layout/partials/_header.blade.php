@@ -28,19 +28,19 @@
 						  </button>
 						  <ul class="dropdown-menu dropdown-menu-lg-end">
 						    <li><a href="{{ route('admin-panel.index') }}" class="dropdown-item" type="button"><i class="fa-solid fa-user" style="color: #47769E"></i> <b>Admin Dashboard</b></a></li>
-						    <li><a class="dropdown-item" href="{{ route('addNewTool') }}" type="button"><i class="fa-solid fa-user" style="color: #47769E"></i> <b>Submit Tool</b></a></li>
-						    <li><a class="dropdown-item" type="button">
+						    <!-- <li><a class="dropdown-item" href="{{ route('addNewTool') }}" type="button"><i class="fa-solid fa-user" style="color: #47769E"></i> <b>Submit Tool</b></a></li> -->
+						    <li><a class="dropdown-item" href="{{ route('addNewTool') }}" type="button">
 						    	<i class="fa-solid fa-turn-up" style="color: #47769E"></i>
-						    <b>Publish Tool</b></a></li>
-						    <li><a class="dropdown-item" type="button">
-						    	<i class="fa-solid fa-code-compare" style="color: #47769E"></i>
-						    <b>Favorite Tool</b></a></li>
-						    <li><a class="dropdown-item" type="button">
+						    <b>Publish New Tool</b></a></li>
+                                <li><a href="{{ route('my-profile') }}" class="dropdown-item" type="button">
+                                    <i class="fa-solid fa-code-compare" style="color: #47769E"></i>
+                                <b>My Profile</b></a></li>
+						    <!-- <li><a class="dropdown-item" type="button">
 						    	<i class="fa-solid fa-bookmark" style="color: #47769E"></i>
-						    <b>Featured Tool</b></a></li>
-						    <li><a class="dropdown-item" type="button">
+						    <b>Featured Tool</b></a></li> -->
+						    <!-- <li><a class="dropdown-item" type="button">
 						    	<i class="fa-solid fa-gear" style="color: #47769E"></i>
-						    <b>Setting</b></a></li>
+						    <b>Setting</b></a></li> -->
 						    <li><a href="{{ route('signout') }}" class="dropdown-item" type="button">
 						    	<i class="fa-solid fa-lock" style="color: #47769E"></i>
 						    <b>Logout</b></a></li>

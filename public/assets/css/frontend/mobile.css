@@ -1,0 +1,138 @@
+/*=Mobile Version*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575.98px) {
+    .col-3 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .rk_post_bottom .rk_heart_img_icon{
+            /*margin-top: -14%;*/
+
+    }
+    .rk_post {
+        margin-top: -2%;
+    }
+    .rk_post_bottom {
+        padding: 23px;
+        margin-top: -14%;
+    }
+
+    .rk-subscriber-container h3 {
+            
+        margin-top: 13%;
+        text-align: center;
+        font-size: 18px;
+        width: 100%;
+        margin-left: 0%;
+
+    }
+    .rk_banner_category_bottom .input-group {
+        margin-left: 20px;
+    }
+
+    .rk_footer {
+        background: #384148;
+        height: 366px;
+        margin-top: 7%;
+    }
+    .rk_link_icon_footer ul li {
+        list-style: none;
+        float: left;
+        margin-right: 6px;
+    }
+
+    .rk_bottom_logo p {
+        color: #fff;
+        margin-top: 5%;
+        width: 63%;
+        margin-left: 18%;
+    }
+
+    .rk_bottom_logo img {
+        margin-left: 18%;
+    }
+    .rk_social_icon_footer {
+        margin-top: 7%;
+        margin-left: 19%;
+
+    }
+
+    .rk_dropdown .btn-group {
+        float: none;
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .rk_submit_tool button {
+        background: #56ABF4;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        height: 38px;
+        margin-bottom: 7%;
+        font-size: 15px;
+    }
+    .rk_banner_category .input-group {
+        margin-left: 0px;
+    }
+    .rk_banner_category .input-group .form-outline {
+        width: 100%;
+    }
+
+    .rk_submit_tool_new button {
+        background: #56ABF4;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        width: 142px;
+    }
+    .rk-noti-lg {
+        background: #384148;
+        height: 116px;
+        margin-left: -616%;
+    }
+
+    .rk_profile_button button {
+        width: 100%;
+        height: 48px;
+        border-radius: 12px;
+        background: #384148;
+        color: #fff;
+         margin-left: 0%; 
+        font-weight: bold;
+        margin-top: 2%;
+    }
+    .rk_welcome_img h3 {
+        color: #fff;
+        font-weight: bold;
+        width: 63%;
+        /* background: red; */
+        margin-top: 8%;
+        margin-left: 23%;
+    }
+
+    #rkformFileMultiple{
+        width: 100%;
+    }
+
+    .rk_form_list {
+        padding: 28px;
+        background-color: #384148;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 6%;
+        border-radius: 5px;
+    }
+    #rkformFileMultipl{
+        width: 
+        73%;
+    }
+
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }

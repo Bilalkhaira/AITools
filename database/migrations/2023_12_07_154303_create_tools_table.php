@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('website_link')->nullable();
             $table->string('price')->nullable();
             $table->string('thumbnail')->nullable();
+            $table->tinyInteger('created_by');
             $table->longText('tags')->nullable();
             $table->string('status')->default('Deactivate');
             $table->timestamps();

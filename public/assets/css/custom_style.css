@@ -1,0 +1,150 @@
+.bgColor {
+    background-color: #1D3059 !important;
+}
+.page-link{
+    background-color: #1D3059 !important;
+}
+.cardBody{
+    background-color: #f6f9ff !important;
+}
+
+.image-input [data-kt-image-input-action=change] {
+    left: 90% !important; 
+    top: -12px !important;
+}
+
+
+
+.notify_parrent{
+    position: relative;
+}
+.notify{
+    background-color: #1D3059;
+    padding: 4px 6px;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 10px;
+}
+#regForm {
+    background-color: #f6f9ff !important;
+    margin: auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+
+.dlt_btn {
+    border: none;
+    background-color: white;
+}
+
+#regForm input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+#regForm select {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+#regForm textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+#regForm input.invalid {
+    border-color: red;
+}
+
+/* Hide all steps by default: */
+#regForm .tab {
+    display: none;
+}
+
+#regForm button {
+    background-color: #1D3059;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+#regForm button:hover {
+    opacity: 0.8;
+}
+
+#regForm #prevBtn {
+    background-color: #1D3059;
+}
+
+/* Make circles that indicate the steps of the form: */
+#regForm .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    /* opacity: 0.5; */
+}
+
+#regForm .step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+#regForm .step.finish {
+    background-color: #1D3059;
+}
+
+#img_dlt_btn {
+    color: white;
+    position: absolute;
+    top: 29px;
+    right: 12px;
+    cursor: pointer;
+    background-color: red;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.img_main {
+    position: relative;
+}
+
+.border_line {
+    border: .50px solid lightgray;
+}
+
+.form-check-custom .form-check-label {
+    margin-left: 2.55rem !important;
+}
+
+.displayNone {
+    display: none !important;
+}
+.displayYes {
+    display: block !important;
+}
+#car_view:hover{
+    color: green !important;
+}

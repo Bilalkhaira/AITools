@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Models\Tool;
 use App\Models\ToolsImage;
+use Illuminate\Support\Str;
 use App\Models\ToolCategory;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -26,6 +27,7 @@ class HomeController extends Controller
         foreach($tools as $key=>$tool){
             $image = ToolsImage::where('tool_id', $tool->id)->first();
             $tools[$key]['imgUrl'] = asset('images/frontend/').'/'.$image->images;
+            $tools[$key]['description'] = Str::limit($tool->description, 50);
         }
         
         return response()->json($tools);
@@ -43,6 +45,7 @@ class HomeController extends Controller
         foreach($tools as $key=>$tool){
             $image = ToolsImage::where('tool_id', $tool->id)->first();
             $tools[$key]['imgUrl'] = asset('images/frontend/').'/'.$image->images;
+            $tools[$key]['description'] = Str::limit($tool->description, 50);
         }
         
         return response()->json($tools);

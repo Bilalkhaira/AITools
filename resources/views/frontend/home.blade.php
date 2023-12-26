@@ -103,7 +103,7 @@
                                 <button class=""> {{ $tool->price ?? ''}}</button>
                             </div>
                             <div class="rk_post">
-                                <p>{{ $tool->description ?? ''}}</p>
+                                <p>{{ Illuminate\Support\Str::limit($tool->description, 50)}}</p>
                             </div>
                             <div class="rk_post_bottom">
                                 <button class="">#SEO</button>
@@ -179,7 +179,11 @@
 $(document).on('click', '.rk_heart_img_icon', function(e) {
     var toolId = $(this).find('input').val();
     if (!@json(auth()->user())) {
-        toastr.error('First login then you can add tools in your favorite tools list');
+        toastr.success('First login then you can add tools in your favorite tools list');
+        setTimeout(() => {
+            window.location.href = 'signin';
+        }, 3000);
+
     } else {
         $.ajaxSetup({
             headers: {
@@ -195,7 +199,7 @@ $(document).on('click', '.rk_heart_img_icon', function(e) {
                 toolId: toolId
             },
             success: function(response) {
-                if(response == 'true') {
+                if (response == 'true') {
                     toastr.success('Updated Successfully');
                 } else {
                     toastr.error('This tool is already added in your favorte tools list');

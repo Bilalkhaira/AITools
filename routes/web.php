@@ -34,6 +34,11 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 |
 */
 
+Route::get('/run-command', function () {
+    Artisan::call('scrape:data');
+    return "Command Run Successfully";
+});
+
 
 Route::get('/clear', function () {
     Artisan::call('route:clear');
@@ -73,6 +78,14 @@ Route::post('add-new-tool/store', [ToolController::class, 'store'])->name('addNe
 Route::post('filterTools', [HomeController::class, 'filterTools'])->name('filterTools');
 Route::post('filterByInput', [HomeController::class, 'filterByInput'])->name('filterByInput');
 Route::post('favorteTool', [ToolController::class, 'favorteTool'])->name('favorteTool');
+Route::get('preview', [ToolController::class, 'preview'])->name('preview');
+Route::get('my-profile', [UserAdminController::class, 'myProfile'])->name('my-profile');
+Route::get('edit-profile', [UserAdminController::class, 'editProfile'])->name('edit-profile');
+Route::post('update-profile', [UserAdminController::class, 'updateProfile'])->name('update-profile');
+Route::get('edit-tool/{id?}', [ToolController::class, 'editTool'])->name('edit.tool');
+Route::get('delete-tool/{id?}', [ToolController::class, 'destroyTool'])->name('delete.tool');
+Route::get('delete-tool-image/{id?}', [ToolController::class, 'deleteToolImage'])->name('delete.tool.image');
+Route::put('update-tool/{id?}', [ToolController::class, 'updateTool'])->name('update.tool');
 
 Route::get('/admin', [AuthenticatedSessionController::class, 'create']);
 
