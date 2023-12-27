@@ -97,7 +97,9 @@
                     @foreach($tools as $tool)
                     <div class="col-3 col-sm-4">
                         <div class="rk_head_post_img">
-                            <img src="{{ asset('images/frontend/'.$tool->images[0]->images) }}">
+                            @if(!empty($tool->images[0]))
+                            <img src="{{ asset('images/frontend/'.$tool->images[0]->images ?? '') }}">
+                            @endif
                             <div class="rk_post_title">
                                 <h4>{{ $tool->title ?? ''}}</h4>
                                 <button class=""> {{ $tool->price ?? ''}}</button>
@@ -110,7 +112,8 @@
                                 <button class="">#Keywords</button>
 
                                 <div class="rk_bottom">
-                                    <i class="fa-solid fa-code" style="color:#fff;"></i>
+                                    <!-- <i class="fa-solid fa-code" style="color:#fff;"></i> -->
+                                    <a href="{{ route('tool.show', $tool->id)}}"><i style="color:#fff;" class="fa fa-eye"></i></a>
 
                                 </div>
                                 <div class="rk_bottom rk_heart_img_icon">

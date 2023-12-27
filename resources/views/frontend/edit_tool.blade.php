@@ -5,8 +5,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="rk_form_list">
-                    <form method="POST" action="" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('update.tool', $tool->id)}}" enctype="multipart/form-data">
                         @csrf
+                        @method('PUT')
                         <h3>Submit New Tool</h3>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Ai Tool Title*</label>
@@ -143,12 +144,13 @@
                         <div class="colorRed">{{ $message }}</div>
                         @enderror
                         <div class="row editToolImage">
-                            @if($tool->images[0])
+                            @if(!empty($tool->images[0]))
                             @foreach($tool->images as $image)
                             <div class="col-md-3">
-                                <div id="imgDelete">
-                                    <a href="{{ route('delete.tool.image', $image->id ) }}"><i class="fa fa-trash"></i></a>
-                                </div>
+                                <span id="imgDelete">
+                                    <a href="#" id="img_dlt_btn"><i class="fa fa-trash"></i></a>
+                                    <input type="hidden" id="imgId" value="{{ $image->id }}">
+                                </span>
                                 <img width="100%" src="{{ asset('images/frontend/'.$image->images) }}">
                             </div>
                             @endforeach
@@ -172,4 +174,26 @@
     </div>
 
 </div>
+<script>
+    $(document).on("click", "#img_dlt_btn", function(e) {
+        e.preventDefault();
+        var imgId = $(this).closest('div').find("#imgId").val();
+        $(this).closest("div").css('display', 'none');
+        $.ajaxSetup({
+            headers: {
+                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+            },
+        });
+
+        $.ajax({
+            url: "{{ route('delete.tool.image') }}" + "/" + imgId,
+            type: "GET",
+            dataType: "json",
+
+            success: function(data) {
+
+            }
+        });
+    });
+</script>
 @endsection

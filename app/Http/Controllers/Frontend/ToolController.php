@@ -121,12 +121,16 @@ class ToolController extends Controller
         $images = ToolsImage::where('tool_id', $tool->id)->get();
         foreach($images as $image)
         {
-            $imagePath =  $imgpath . $images->images;
+            $imagePath =  $imgpath . $image->images;
             if(File::exists($imagePath)) {
                 File::delete($imagePath);
             }
+            ToolsImage::find($image->id)->delete();
         }
+
+        ToolUser::where('tool_id', $tool->id)->delete();
         $tool->delete();
+        toastr()->success('Tool deleted successfully');
         return redirect()->back();
     }
 
@@ -137,26 +141,27 @@ class ToolController extends Controller
         if(File::exists($imagePath)) {
             File::delete($imagePath);
         }
+        $deleteImg->delete();
         return response()->json('true');
     }
 
     public function updateTool(Request $request, $id)
     {
+        
         $request->validate([
             'title' => ['required'],
-            'tool_categories_id' => ['required'],
+            // 'tool_categories_id' => ['required'],
             'description' => ['required'],
-            'use_case1' => ['required'],
-            'use_case2' => ['required'],
-            'use_case3' => ['required'],
-            'tags' => ['required'],
+            // 'use_case1' => ['required'],
+            // 'use_case2' => ['required'],
+            // 'use_case3' => ['required'],
+            // 'tags' => ['required'],
             'price' => ['required'],
-            'website_link' => ['required'],
+            // 'website_link' => ['required'],
         ]);
-
+        
         try {
             $tool = Tool::find($id);
-
             $tool->update([
                         'title' => $request->title ?? '',
                         'tool_categories_id' => $request->tool_categories_id ?? '',
@@ -178,7 +183,7 @@ class ToolController extends Controller
                     $image->move($imgpath, $imageName);
 
                     ToolsImage::create([
-                        'tool_id' => $newRecord->id ?? '',
+                        'tool_id' => $tool->id ?? '',
                         'images' => $imageName ?? ''
                     ]);
                 }
@@ -194,5 +199,10 @@ class ToolController extends Controller
 
             return redirect()->back();
         }
+    }
+
+    public function show($id){
+        $tool = Tool::with('images')->find($id);
+        return view('frontend.tool_view', compact('tool'));
     }
 }

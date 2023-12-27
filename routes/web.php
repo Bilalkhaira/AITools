@@ -86,6 +86,7 @@ Route::get('edit-tool/{id?}', [ToolController::class, 'editTool'])->name('edit.t
 Route::get('delete-tool/{id?}', [ToolController::class, 'destroyTool'])->name('delete.tool');
 Route::get('delete-tool-image/{id?}', [ToolController::class, 'deleteToolImage'])->name('delete.tool.image');
 Route::put('update-tool/{id?}', [ToolController::class, 'updateTool'])->name('update.tool');
+Route::get('tool/show/{id?}', [ToolController::class, 'show'])->name('tool.show');
 
 Route::get('/admin', [AuthenticatedSessionController::class, 'create']);
 

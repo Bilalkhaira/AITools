@@ -162,9 +162,48 @@ body {
 	top: 3px;
 
 }
+.before_heading{
+	padding: 20px 0px;
+	background-color: #384148;
+}
+.heading_sec{
+	padding: 50px 0px;
+	background-color: #313b44;
+	color: white;
+}
+.des_sec{
+	padding-top: 150px;
+}
 
 #home .col-md-4 {
 	margin-bottom: 30px;
+}
+.detail_sec{
+	color: white;
+}
+.detail_sec img{
+	border-radius: 10px;
+}
+.detail_sec h2{
+	display: inline-block;
+}
+.site_link{
+	background-color: #56ABF4;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	margin-left: 20px;
+	color: white;
+	text-decoration: none;
+}
+.price_dv{
+	background-color: #f1ffff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: block;
 }
 
 .rk_form_list {

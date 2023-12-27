@@ -57,11 +57,14 @@
                     @foreach($tools as $tool)
                     <div class="col-3 col-md-4 tool_editBtn_main">
                         <div id="tool_editBtn">
-							<a href="#"><i class="fa fa-trash"></i></a>
+							<a href="{{ route('delete.tool', $tool->id) }}" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a>
 							<a href="{{ route('edit.tool', $tool->id) }}"><i class="fa fa-edit"></i></a>
+							<a href="{{ route('tool.show', $tool->id) }}"><i class="fa fa-eye"></i></a>
 						</div>
                         <div class="rk_head_post_img">
+                            @if(!empty($tool->images[0]))
                             <img src="{{ asset('images/frontend/'.$tool->images[0]->images) }}">
+                            @endif
                             <div class="rk_post_title">
                                 <h4>{{ $tool->title ?? ''}}</h4>
                                 <button class=""> {{ $tool->price ?? ''}}</button>
@@ -99,7 +102,9 @@
                     <div class="col-3 col-md-4">
 
                         <div class="rk_head_post_img">
+                            @if(!empty($tool->images[0]))
                             <img src="{{ asset('images/frontend/'.$tool->images[0]->images) }}">
+                            @endif
                             <div class="rk_post_title">
                                 <h4>{{ $tool->title ?? ''}}</h4>
                                 <button class=""> {{ $tool->price ?? ''}}</button>
@@ -112,7 +117,7 @@
                                 <button class="">#Keywords</button>
 
                                 <div class="rk_bottom">
-                                    <i class="fa-solid fa-code" style="color:#fff;"></i>
+                                <a href="{{ route('tool.show', $tool->id)}}"><i style="color:#fff;" class="fa fa-eye"></i></a>
 
                                 </div>
                                 <div class="rk_bottom rk_heart_img_icon">

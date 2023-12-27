@@ -29,6 +29,7 @@ class ScrapeData extends Command
             $title = $linkedPageCrawler->filter('h1')->text();
             $description = $linkedPageCrawler->filter('.elementor-widget-theme-post-content')->text();
             $image = $linkedPageCrawler->filter('meta[property="og:image"]')->attr('content');
+            $link = $linkedPageCrawler->filter('.jet-listing-dynamic-link__link')->attr('href');
 
             $path =  now()->timestamp . '_' . uniqid() . '.jpg';
             $directory = dirname(public_path('images/frontend/' . $path));
@@ -43,12 +44,14 @@ class ScrapeData extends Command
                         'status' => 'Activate',
                         'price' => 'Free',
                         'tool_categories_id' => 5,
+                        'website_link' => $link,
                     ]);
 
             ToolsImage::create([
                 'tool_id' => $record->id ?? '',
                 'images' => $path ?? ''
             ]);
+            $this->info($link);
         });
 
         $this->info("Command run successfully");
